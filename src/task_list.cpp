@@ -4,8 +4,8 @@
 using namespace std;
 
 bool isValidPriority(int priority) {
-    // TODO: Return true when priority is from 1 to 5.
-    return false;
+    // Return true when priority is from 1 to 5.
+    return (priority >= 1 && priority <= 5);
 }
 
 Task createTask(string description, int priority) {
