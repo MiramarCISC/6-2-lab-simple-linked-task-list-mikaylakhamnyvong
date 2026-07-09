@@ -10,13 +10,12 @@ bool isValidPriority(int priority) {
 
 Task createTask(string description, int priority) {
     Task task;
-
-    // TODO:
     // Store the description.
     // Store the priority if valid; otherwise store 1.
     // New tasks should start as not completed.
-
-    return task;
+    task.description = description;
+    task.priority = isValidPriority(priority) ? priority: 1;
+    task.completed = false;
 }
 
 void insertFront(TaskNode*& head, Task task) {
