@@ -76,7 +76,7 @@ int removeCompletedTasks(TaskNode*& head) {
         TaskNode* toDelete = head;
         head = head->next;
         delete toDelete;
-        removeCount++;
+        removedCount++;
     }
 
     TaskNode* current = head;
